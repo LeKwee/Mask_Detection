@@ -5,7 +5,7 @@
 ## <a name="data"></a> Data
 Data is provided by Roboflow under the public domain license and shared by Joseph Nelson
 
-Source: https://public.roboflow.com/object-detection/mask-wearing
+Source: https://public.roboflow.com/object-detection/mask-wearing/4
 
 #### Overview
 The Mask Wearing dataset is an object detection dataset of individuals wearing various types of masks and those without masks. The images were originally collected by Cheng Hsun Teng from Eden Social Welfare Foundation, Taiwan and relabled by the Roboflow team.
