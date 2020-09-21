@@ -1,6 +1,8 @@
 # Mask Detection 
 ## Contents
 - [Data](#data)
+- [training](https://github.com/LeKwee/Mask_Detection/blob/master/Mask_detection_yolov4_darknet/notebooks/training.ipynb)
+- [inferenc](https://github.com/LeKwee/Mask_Detection/blob/master/Mask_detection_yolov4_darknet/notebooks/inference.ipynb)
 
 ## <a name="data"></a> Data
 Data is provided by Roboflow under the public domain license and shared by Joseph Nelson
