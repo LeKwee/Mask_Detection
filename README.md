@@ -3,8 +3,8 @@ To create a object detection model able to identify people wearing or not wearin
 
 ## Contents
 - [Data](#data)
-- [Training](https://github.com/LeKwee/Mask_Detection/blob/master/Mask_detection_yolov4_darknet/notebooks/training.ipynb)
-- [Inference](https://github.com/LeKwee/Mask_Detection/blob/master/Mask_detection_yolov4_darknet/notebooks/inference.ipynb)
+- [Training](https://github.com/LeKwee/Mask_Detection/tree/master/Mask_detection_yolov4_darknet/notebooks/Training)
+- [Inference](https://github.com/LeKwee/Mask_Detection/tree/master/Mask_detection_yolov4_darknet/notebooks/Inference)
 
 ## <a name="data"></a> Data
 Data is provided by Roboflow under the public domain license and shared by Joseph Nelson
