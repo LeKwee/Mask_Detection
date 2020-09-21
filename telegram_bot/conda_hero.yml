@@ -1,0 +1,8 @@
+name: mask
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip=20.2.3=py_0
+  - python=3.8.5=h60c2a47_7_cpython
+  - python-telegram-bot=12.7
