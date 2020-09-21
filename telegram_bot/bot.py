@@ -26,13 +26,20 @@ def start(update, context):
     """Send a message when the command /start is issued."""
     update.message.reply_text('Hi!')
 
+def classify_image(update, context):
+    cid = update.message.chat.id
+    image_id = context.bot.get_file(update.message.photo[-1].file_id)
+    context.bot.send_message(cid, 'Analyzing image, be patient !')
+    image_id.download('image.jpg')
+    context.bot.send_photo(cid, open('image.jpg','rb'))
+
 # def help(update, context):
 #     """Send a message when the command /help is issued."""
 #     update.message.reply_text('Help!')
 
-def echo(update, context):
-    """Echo the user message."""
-    update.message.reply_text(update.message.text)
+# def echo(update, context):
+#     """Echo the user message."""
+#     update.message.reply_text(update.message.text)
 
 def error(update, context):
     """Log Errors caused by Updates."""
@@ -53,7 +60,9 @@ def main():
     # dp.add_handler(CommandHandler("help", help))
 
     # on noncommand i.e message - echo the message on Telegram
-    dp.add_handler(MessageHandler(Filters.text, echo))
+    # dp.add_handler(MessageHandler(Filters.text, echo))
+    
+    dp.add_handler(MessageHandler(Filters.photo, classify_image))
 
     # log all errors
     dp.add_error_handler(error)
