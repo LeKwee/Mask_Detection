@@ -32,8 +32,8 @@ def object_detection(update, context):
     image_id = context.bot.get_file(update.message.photo[-1].file_id)
     context.bot.send_message(cid, 'Analyzing image...')
     image_id.download('darknet/image.jpg')
-    # subprocess.run(['darknet/darknet.exe', 'detect', 'yolo-obj.cfg', 'yolo-obj_best.weights', 'image.jpg', '-dont-show'], cwd='darknet/')
-    context.bot.send_photo(cid, open('darknet/image.jpg','rb'))
+    subprocess.run(['darknet/darknet.exe', 'detect', 'yolo-obj.cfg', 'yolo-obj_best.weights', 'image.jpg', '-dont-show'], cwd='darknet/')
+    context.bot.send_photo(cid, open('darknet/predictions.jpg','rb'))
 
 # def help(update, context):
 #     """Send a message when the command /help is issued."""
