@@ -1,6 +1,10 @@
 # Mask Detection 
+To create a object detection model able to identify people wearing or not wearing mask with their respective bounding boxes.
+
 ## Contents
 - [Data](#data)
+- [Training](https://github.com/LeKwee/Mask_Detection/blob/master/Mask_detection_yolov4_darknet/notebooks/training.ipynb)
+- [Inference](https://github.com/LeKwee/Mask_Detection/blob/master/Mask_detection_yolov4_darknet/notebooks/inference.ipynb)
 
 ## <a name="data"></a> Data
 Data is provided by Roboflow under the public domain license and shared by Joseph Nelson
