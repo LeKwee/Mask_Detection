@@ -1,4 +1,6 @@
 # Mask Detection 
+To create a object detection model able to identify people wearing mask and not wearing mask with their respective bounding boxes.
+
 ## Contents
 - [Data](#data)
 - [Training](https://github.com/LeKwee/Mask_Detection/blob/master/Mask_detection_yolov4_darknet/notebooks/training.ipynb)
