@@ -2,6 +2,7 @@ import logging
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import os
 from configparser import ConfigParser
+import subprocess
 
 # read config.ini file
 config_file = 'config.ini'
@@ -26,12 +27,13 @@ def start(update, context):
     """Send a message when the command /start is issued."""
     update.message.reply_text('Hi!')
 
-def classify_image(update, context):
+def object_detection(update, context):
     cid = update.message.chat.id
     image_id = context.bot.get_file(update.message.photo[-1].file_id)
-    context.bot.send_message(cid, 'Analyzing image, be patient !')
-    image_id.download('image.jpg')
-    context.bot.send_photo(cid, open('image.jpg','rb'))
+    context.bot.send_message(cid, 'Analyzing image...')
+    image_id.download('darknet/image.jpg')
+    # subprocess.run(['darknet/darknet.exe', 'detect', 'yolo-obj.cfg', 'yolo-obj_best.weights', 'image.jpg', '-dont-show'], cwd='darknet/')
+    context.bot.send_photo(cid, open('darknet/image.jpg','rb'))
 
 # def help(update, context):
 #     """Send a message when the command /help is issued."""
@@ -62,7 +64,7 @@ def main():
     # on noncommand i.e message - echo the message on Telegram
     # dp.add_handler(MessageHandler(Filters.text, echo))
     
-    dp.add_handler(MessageHandler(Filters.photo, classify_image))
+    dp.add_handler(MessageHandler(Filters.photo, object_detection))
 
     # log all errors
     dp.add_error_handler(error)
