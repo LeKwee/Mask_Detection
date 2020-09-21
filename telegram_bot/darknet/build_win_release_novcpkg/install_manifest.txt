@@ -1,0 +1,10 @@
+C:/Users/alvin/Desktop/test/darknet/darknet.lib
+C:/Users/alvin/Desktop/test/darknet/darknet.dll
+C:/Users/alvin/Desktop/test/darknet/include/darknet/darknet.h
+C:/Users/alvin/Desktop/test/darknet/include/darknet/yolo_v2_class.hpp
+C:/Users/alvin/Desktop/test/darknet/uselib.exe
+C:/Users/alvin/Desktop/test/darknet/darknet.exe
+C:/Users/alvin/Desktop/test/darknet/share/darknet/DarknetTargets.cmake
+C:/Users/alvin/Desktop/test/darknet/share/darknet/DarknetTargets-release.cmake
+C:/Users/alvin/Desktop/test/darknet/share/darknet/DarknetConfig.cmake
+C:/Users/alvin/Desktop/test/darknet/share/darknet/DarknetConfigVersion.cmake
