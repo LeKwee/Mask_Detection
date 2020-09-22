@@ -1,6 +1,0 @@
-C:/Users/alvin/Desktop/test/darknet/build_win_release_novcpkg/CMakeFiles/dark.dir
-C:/Users/alvin/Desktop/test/darknet/build_win_release_novcpkg/CMakeFiles/uselib.dir
-C:/Users/alvin/Desktop/test/darknet/build_win_release_novcpkg/CMakeFiles/INSTALL.dir
-C:/Users/alvin/Desktop/test/darknet/build_win_release_novcpkg/CMakeFiles/darknet.dir
-C:/Users/alvin/Desktop/test/darknet/build_win_release_novcpkg/CMakeFiles/ALL_BUILD.dir
-C:/Users/alvin/Desktop/test/darknet/build_win_release_novcpkg/CMakeFiles/ZERO_CHECK.dir
