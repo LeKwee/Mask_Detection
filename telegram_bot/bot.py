@@ -25,14 +25,18 @@ logger = logging.getLogger(__name__)
 # context. Error handlers also receive the raised TelegramError object in error.
 def start(update, context):
     """Send a message when the command /start is issued."""
-    update.message.reply_text('Hi!')
+    update.message.reply_text("Hi! I'm a Mask detective. Send me a picture and I will tell you who's wearing a mask!!")
 
 def object_detection(update, context):
     cid = update.message.chat.id
     image_id = context.bot.get_file(update.message.photo[-1].file_id)
-    context.bot.send_message(cid, 'Analyzing image...')
+    context.bot.send_message(cid, f'Analyzing image...')
     image_id.download('darknet/image.jpg')
-    subprocess.run(['darknet/darknet.exe', 'detect', 'yolo-obj.cfg', 'yolo-obj_best.weights', 'image.jpg', '-dont-show'], cwd='darknet/')
+    cwd = os.getcwd()
+    os.chdir(cwd + '/darknet')
+    subprocess.run(['chmod', 'a+x', 'darknet'])
+    subprocess.run(['./darknet', 'detect', 'yolo-obj.cfg', 'yolo-obj_best.weights', 'image.jpg', '-dont-show'])
+    os.chdir(cwd)
     context.bot.send_photo(cid, open('darknet/predictions.jpg','rb'))
 
 # def help(update, context):
