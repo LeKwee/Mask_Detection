@@ -56,6 +56,8 @@ To deploy:
 you will have to first get your telegram token and a heroku link and update in a config.ini file.
  
 ## <a name="todo"></a> Future Improvements
-- Improvements to be made on the inference speed. Maybe try a smaller model like tiny-yolo.
-- To provid mask detection on videos on top of current image capabilities.
-- Frequently wrongly predicts images where no one has a mask on as wearing mask. (seems like it requires both classes to be in image to predict no-mask class). This maybe due to imbalanced data set consisting of 1.9k mask vs 300 no-mask labels. To collect more no-mask data to balance training dataset.
+- [ ] Improvements to be made on the inference speed. Maybe try a smaller model like tiny-yolo.
+
+- [ ] To provid mask detection on videos on top of current image capabilities.
+
+- [ ] Frequently wrongly predicts images where no one has a mask on as wearing mask. (seems like it requires both classes to be in image to predict no-mask class). This maybe due to imbalanced data set consisting of 1.9k mask vs 300 no-mask labels. To collect more no-mask data to balance training dataset.
