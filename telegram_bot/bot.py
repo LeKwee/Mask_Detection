@@ -35,7 +35,7 @@ def object_detection(update, context):
     cwd = os.getcwd()
     os.chdir(cwd + '/darknet')
     subprocess.run(['chmod', 'a+x', 'darknet'])
-    subprocess.run(['./darknet', 'detect', 'yolo-obj.cfg', 'yolo-obj_best.weights', 'image.jpg', '-dont-show'])
+    subprocess.run(['./darknet', 'detect', 'yolo-obj.cfg', 'yolo-obj_best_v2.weights', 'image.jpg', '-dont-show'])
     os.chdir(cwd)
     context.bot.send_photo(cid, open('darknet/predictions.jpg','rb'))
 
