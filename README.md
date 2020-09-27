@@ -60,6 +60,15 @@ you will have to first get your telegram token and a heroku link and update in a
 
 - [ ] To provid mask detection on videos on top of current image capabilities.
 
-- [x] Frequently wrongly predicts images where no one has a mask on as wearing mask. (seems like it requires both classes to be in image to predict no-mask class). This maybe due to imbalanced data set consisting of 1.9k mask vs 300 no-mask labels. To collect more no-mask data to balance training dataset.
+- [x] Frequently wrongly predicts images where there is a single person with no mask on. (seems like it requires both classes to be in image to predict no-mask class). This maybe due to imbalanced data set consisting of 1.9k mask vs 300 no-mask labels. To collect more no-mask data to balance training dataset.
 
-      - Collected more no-mask data. The ratio now is ~1300 mask to ~900 no-mask
+     - Collected more no-mask data. The ratio now is ~1300 mask to ~900 no-mask
+      
+     - With new no-mask data balancing, model achieved:
+
+       - mean average precision (mAP@0.50) = 98.59 % 
+
+       - class mask, ap = 98.65% 
+
+       - class no-mask, ap = 98.53%
+     - Personal testing, seems to perform better now on single person focus images with no mask on.
