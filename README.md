@@ -19,6 +19,11 @@ Telegram web/app on desktop: [link](https://t.me/AK_Mask_bot)
 
 Telegram app on mobile: search for @AK_Mask_bot
 
+* Upload a image or take a photo and send to the bot.
+* Please be patient during the "Analysing image..." stage.
+
+![Demo](https://user-images.githubusercontent.com/48329861/97800724-7df52780-1c72-11eb-8889-5cb588e821f5.gif)
+
 ## <a name="data"></a> Data
 Data is provided by Roboflow under the public domain license and shared by Joseph Nelson.
 
