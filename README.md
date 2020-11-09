@@ -1,5 +1,5 @@
 # Mask Detection 
-This is a mask detector deployed as a telegram bot.
+This is a mask detector deployed as a telegram bot using heroku.
 
 It classifies human faces in an image into either:
 - mask
